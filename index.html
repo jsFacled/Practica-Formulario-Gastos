@@ -10,14 +10,14 @@
   <body>
     <h1 class="title">Mis Gastos</h1>
 
-    <form action="">
+    <form action="" id="form">
       <div class="type">
         Tipo de Transacción
 
-        <input type="radio" name="ingreso" id="ingreso" />
+        <input type="radio" name="type" id="ingreso" />
         <label for="ingreso">Ingreso</label>
 
-        <input type="radio" name="egreso" id="egreso" />
+        <input type="radio" name="type" id="egreso" />
         <label for="egreso">Egreso</label>
       </div>
 
@@ -36,50 +36,36 @@
         <input type="text" name="categoría" id="categoría" />
       </div>
 
-      <div class="añadir" >
+      <div class="añadir">
         <button id="btnAñadir">Añadir</button>
       </div>
     </form>
 
-    <div class="tabla">
-        <table>
-            <tr>
-                <th>
-                    Tipo
-                </th>                
-                <th>
-                    Descripción
-                </th>                
-                <th>
-                    Monto
-                </th>                
-                <th>
-                    Categoría
-                </th>                
-            </tr>
+    <div class="content-tabla">
+      <table id="tabla1">
+        <tr>
+          <th>Tipo</th>
+          <th>Descripción</th>
+          <th>Monto</th>
+          <th>Categoría</th>
+        </tr>
 
-            <tr>
-                <td>Ingreso</td>
-                <td>Sueldo</td>
-                <td>1000</td>
-                <td>Trabajo</td>
-            </tr>
-            <tr>
-                <td>Egreso</td>
-                <td>Big Mac</td>
-                <td>7</td>
-                <td>Comida</td>
-            </tr>
-
-        </table>
-
-
+        <tr>
+          <td>Ingreso</td>
+          <td>Sueldo</td>
+          <td>1000</td>
+          <td>Trabajo</td>
+        </tr>
+        <tr>
+          <td>Egreso</td>
+          <td>Big Mac</td>
+          <td>7</td>
+          <td>Comida</td>
+        </tr>
+      </table>
     </div>
 
-
-
-
-
+   
 
     <script src="./index.js"></script>
   </body>

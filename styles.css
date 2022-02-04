@@ -24,10 +24,25 @@ div{
 
 /* === TABLA === */
 
-.tabla{
+.content-tabla{
     background-color: palevioletred;
-}
+    }
 
+#tabla1 {
+        margin: 0 auto;
+    }
 tr{
     background-color: orange;
+}
+
+th{
+    border: solid 5px red;
+}
+td{
+    border: solid 1px red;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
 }
