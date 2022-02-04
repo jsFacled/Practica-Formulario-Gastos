@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Gastos</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="title">Mis Gastos</h1>
+
+    <form action="">
+      <div class="type">
+        Tipo de Transacción
+
+        <input type="radio" name="ingreso" id="ingreso" />
+        <label for="ingreso">Ingreso</label>
+
+        <input type="radio" name="egreso" id="egreso" />
+        <label for="egreso">Egreso</label>
+      </div>
+
+      <div class="descripcion">
+        <label for="descripcion">Descripción</label>
+        <input type="text" name="descripcion" id="descripcion" />
+      </div>
+
+      <div class="monto">
+        <label for="monto">Monto</label>
+        <input type="number" name="monto" id="monto" />
+      </div>
+
+      <div class="categoria">
+        <label for="categoría">Categoría</label>
+        <input type="text" name="categoría" id="categoría" />
+      </div>
+
+      <div class="añadir" >
+        <button id="btnAñadir">Añadir</button>
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

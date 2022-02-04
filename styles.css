@@ -1,0 +1,23 @@
+form {
+    background-color: aqua;
+
+    text-align: center;
+    
+    
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    padding: 20px;
+    
+}
+
+#btnAñadir{
+    font-size: medium;
+    color: rgb(47, 8, 119);
+    border-radius: 15%;
+    padding: 10px;
+}
