@@ -21,3 +21,13 @@ div{
     border-radius: 15%;
     padding: 10px;
 }
+
+/* === TABLA === */
+
+.tabla{
+    background-color: palevioletred;
+}
+
+tr{
+    background-color: orange;
+}
