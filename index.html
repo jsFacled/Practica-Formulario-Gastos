@@ -10,14 +10,16 @@
   <body>
     <h1 class="title">Mis Gastos</h1>
 
-    <form action="" id="form">
+<!-- ====== FORM =========== --> 
+
+    <form action="" id="tForm">
       <div class="type">
         Tipo de Transacción
 
-        <input type="radio" name="type" id="ingreso" />
+        <input type="radio" name="type" id="ingreso" value="ingr" />
         <label for="ingreso">Ingreso</label>
 
-        <input type="radio" name="type" id="egreso" />
+        <input type="radio" name="type" id="egreso" value="egr" />
         <label for="egreso">Egreso</label>
       </div>
 
@@ -31,9 +33,9 @@
         <input type="number" name="monto" id="monto" />
       </div>
 
-      <div class="categoria">
-        <label for="categoría">Categoría</label>
-        <input type="text" name="categoría" id="categoría" />
+      <div class="cat">
+        <label for="cat">Categoría</label>
+        <input type="text" name="cat" id="cat" />
       </div>
 
       <div class="añadir">
