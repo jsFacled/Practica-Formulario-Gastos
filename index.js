@@ -15,8 +15,18 @@ form.addEventListener("submit", function (event) {
   // Inserto los datos en la Tabla.
   insertRowInTransactionTable(transactionObj);
 });
+
 /* ========= FUNCIONES PARA EL ADDEVENTLISTENER ==========*/
 /* =======================================================*/
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  /* Tomo del localStorage el array para que inserte su contenido en la tabla al refrescar la página. Con forEach recorremos el array y va imprimiendo*/
+  let transactionObjArray = JSON.parse(localStorage.getItem("transactionData"));
+  transactionObjArray.forEach(function (arrayElement) {
+    insertRowInTransactionTable(arrayElement);
+    console.log("Se inserta elemento en tabla")
+  });
+});
 
 function convertFormDataToTransactionObj(formData) {
   let transType = formData.get("type");
@@ -44,11 +54,12 @@ function insertRowInTransactionTable(transactionObj) {
 }
 
 function saveTransactionObj(transactionObj) {
-     /*creamos un array para guardar las transacciones que voy agregando al localStorage las cuales están en formato JSON y las convierto a objeto.*/
-  let myTransactionArray =JSON.parse(localStorage.getItem("transactionData")) || [];
+  /*creamos un array para guardar las transacciones que voy agregando al localStorage las cuales están en formato JSON y las convierto a objeto.*/
+  let myTransactionArray =
+    JSON.parse(localStorage.getItem("transactionData")) || [];
   /*le agrego el operador OR y doble corchete para que agregue un array vacío si está vacío el localStorage. Sino daría null con error.*/
   myTransactionArray.push(transactionObj);
-    //al objeto lo pasamos a JSON para guardarlo al localStorage.
+  //al objeto lo pasamos a JSON para guardarlo al localStorage.
   let transactionArrayJSON = JSON.stringify(myTransactionArray);
   localStorage.setItem("transactionData", transactionArrayJSON);
 }
